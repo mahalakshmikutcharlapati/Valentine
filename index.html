@@ -9,7 +9,7 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #ff9a9e, #fecfef);
       height: 100vh;
-      margin-top: 100px;
+      margin-top: 50px;
       overflow: hidden;
     }
 
@@ -21,6 +21,14 @@
     p {
       font-size: 22px;
       color: #333;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     button {
@@ -46,14 +54,26 @@
 
 <body>
 
-  <h1>Jagadeesh Sir💖</h1>
+  <h1>Jagadeesh 💖</h1>
   <p>Will you be my Valentine? 💌</p>
+
+  <!-- Photos -->
+  <img src="photo1.jpeg">
+  <img src="photo2.jpeg">
+
+  <br>
 
   <button id="yes" onclick="yesClicked()">Yes ❤️</button>
   <button id="no" onmouseover="moveNo()">No 😢</button>
 
+  <!-- Music -->
+  <audio id="music" loop>
+    <source src="love.mp3" type="audio/mpeg">
+  </audio>
+
   <script>
     function yesClicked() {
+      document.getElementById("music").play();
       alert("Wow ❤️ I love you… You made my life beautiful 💕");
     }
 
