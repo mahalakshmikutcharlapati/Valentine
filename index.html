@@ -9,81 +9,16 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #ff9a9e, #fecfef);
       height: 100vh;
-      margin-top: 50px;
+      margin: 0;
       overflow: hidden;
     }
 
     h1 {
       color: #d6006e;
       font-size: 42px;
+      margin-top: 80px;
     }
 
-    p {
-      font-size: 22px;
-      color: #333;
-    }
-
-    img {
-      width: 200px;
-      height: 200px;
-      border-radius: 20px;
-      margin: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-
-    button {
-      padding: 12px 25px;
-      font-size: 18px;
-      margin: 15px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    #yes {
-      background-color: #ff4d88;
-      color: white;
-    }
-
-    #no {
-      background-color: #ccc;
-      position: absolute;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>Jagadeesh 💖</h1>
-  <p>Will you be my Valentine? 💌</p>
-
-  <!-- Photos -->
-  <img src="photo1.jpeg">
-  <img src="photo2.jpeg">
-
-  <br>
-
-  <button id="yes" onclick="yesClicked()">Yes ❤️</button>
-  <button id="no" onmouseover="moveNo()">No 😢</button>
-
-  <!-- Music -->
-  <audio id="music" loop>
-    <source src="love.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    function yesClicked() {
-      document.getElementById("music").play();
-      alert("Wow ❤️ I love you… You made my life beautiful 💕");
-    }
-
-    function moveNo() {
-      var x = Math.random() * window.innerWidth;
-      var y = Math.random() * window.innerHeight;
-      document.getElementById("no").style.left = x + "px";
-      document.getElementById("no").style.top = y + "px";
-    }
-  </script>
-
-</body>
-</html>
+    #question {
+      font-size: 24px;
+      margin-top: 20px
